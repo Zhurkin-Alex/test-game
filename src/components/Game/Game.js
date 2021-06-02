@@ -27,7 +27,7 @@ function Game(props) {
       }
       setBufer([]);
     }
-  }, [bufer]);
+  }, [bufer, dispatch]);
 
   return (
     <section className="game">
