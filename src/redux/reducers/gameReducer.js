@@ -129,7 +129,7 @@ export default function userReducer(state = game, action) {
         User:
         {...state.User,
         count:state.User.count+1},
-        oneGame: state.oneGame.map(row=> row.map(cell=>cell.id==action.payload ? {...cell, status:"open"} : cell))
+        oneGame: state.oneGame.map(row=> row.map(cell=>cell.id===action.payload ? {...cell, status:"open"} : cell))
       }
     case REMOVED:
       return{

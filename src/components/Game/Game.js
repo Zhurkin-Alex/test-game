@@ -19,8 +19,8 @@ function Game(props) {
   };
 
   useEffect(() => {
-    if (bufer.length == 2) {
-      if (bufer[0].color == bufer[1].color) {
+    if (bufer.length === 2) {
+      if (bufer[0].color === bufer[1].color) {
         dispatch(REMOVEDAC([bufer[0].id, bufer[1].id]));
       } else {
         dispatch(CLOSEAC([bufer[0].id, bufer[1].id]));
